@@ -17,10 +17,10 @@ body {
   line-height: 1.7;
 }
 
-.flex__item {
+/* .flex__item {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 .container {
   max-width: 960px;
@@ -62,6 +62,11 @@ body {
 
 .header__nav-list li {
   margin-right: 25px;
+}
+
+.header_flex__item {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__nav-list- li:last-child {
@@ -152,6 +157,11 @@ body {
 #about .common__sub-ttl,
 #about .common__ttl {
   text-align: center;
+}
+
+.about_flex__item {
+  display: flex;
+  justify-content: space-around;
 }
 
 .about__item {
@@ -262,6 +272,16 @@ body {
   display: block;
 }
 
+
+.blog_flex__item {
+  display: flex;
+  padding: 0;
+}
+
+.tag {
+  margin-left: auto;
+}
+
 .blog-wrap__item-content {
   background: #fff;
   border-radius: 0 0 15px 15px;
@@ -340,6 +360,10 @@ body {
   margin-top: 80px;
 }
 
+.recruit_flex__item {
+  display: flex;
+}
+
 .recruit__item {
   height: 300px;
   position: relative;
@@ -387,6 +411,7 @@ body {
 
 .contact__ttl::before {
   position: absolute;
+  vertical-align: middle;
   bottom: 20px;
   left: 50%;
   height: 40px;
@@ -412,6 +437,8 @@ body {
 }
 
 .contact__btn::after {
+  display: inline-block;
+  vertical-align: middle;
   position: absolute;
   left: 30px;
   top: 50%;
@@ -437,6 +464,26 @@ body {
 
 @media screen and (max-width: 768px) {
 
+  .about_flex__item{
+    display: block;
+  }
+
+  .about__item-img {
+    width: 100%;
+  }
+
+  .about__item-txt {
+    width: 100%;
+  }
+
+  .service-wrap {
+    display: block;
+  }
+
+  .service-wrap__item--first {
+    padding: 30px 20px;
+  }
+
   .navbar {
     position: fixed;
   }
@@ -456,7 +503,6 @@ body {
     text-align: center;
   }
   .common__ttl {
-    font-size: 16px;
     text-align: center;
   }
 
@@ -484,27 +530,18 @@ body {
     font-size: 12px;
   }
 
-  .about__item-txt {
-    font-size: 12px;
+  .recruit_flex__item {
+    display: block;
   }
 
-  .about__item-img {
-    margin-top: 50px;
+  .recruit__item--first {
+    width: 100%;
   }
 
-  .service-wrap__item-content-ttl {
-    font-size: 12px;
+  .recruit__item--second {
+    width: 100%;
   }
-
-  .service-wrap__item-content-ttl-p {
-    font-size: 8px;
-  }
-
-  .recruit__item-ttl {
-    font-size: 16px;
-  }
-
-}
+} 
 
 @media screen and (max-width: 480px) {
   .service-wrap__item-content-ttl-p {
